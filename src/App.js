@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/accordian";
 import ImageSlider from "./components/image-slider";
+import LightDarkTheme from "./components/light-dark-mode";
 import LoadMoreImage from "./components/load-more-image";
 import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
@@ -20,7 +21,8 @@ function App() {
       /> */}
       {/* <LoadMoreImage/> */}
       {/* <TreeView /> */}
-      <QrCodeGenerator />
+      {/* <QrCodeGenerator /> */}
+      <LightDarkTheme />
     </div>
   );
 }
