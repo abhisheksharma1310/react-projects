@@ -2,6 +2,7 @@ import "./App.css";
 import Accordion from "./components/accordian";
 import ImageSlider from "./components/image-slider";
 import LoadMoreImage from "./components/load-more-image";
+import QrCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/star-rating";
 import TreeView from "./components/tree-view";
@@ -18,7 +19,8 @@ function App() {
         limit={"10"}
       /> */}
       {/* <LoadMoreImage/> */}
-      <TreeView />
+      {/* <TreeView /> */}
+      <QrCodeGenerator />
     </div>
   );
 }
