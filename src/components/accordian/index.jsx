@@ -30,7 +30,7 @@ const Accordion = () => {
       <div className="accordian">
         {data && data.length > 0 ? (
           data.map((item) => (
-            <div className="item">
+            <div className="item" key={data.id}>
               <div
                 onClick={
                   enableMultiSelection

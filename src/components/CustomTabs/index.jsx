@@ -1,33 +1,29 @@
 import React from "react";
-import { useState } from "react";
+import Tabs from "./Tabs";
 
-const Tabs = ({ tabsContent }) => {
-  const [currentTabIndex, setCurrentTabIndex] = useState(0);
+import "./styles.css";
 
-  const handleOnClick = (getCurrentIndex) => {
-    setCurrentTabIndex(getCurrentIndex);
-  };
+const tabs = [
+  {
+    label: "Tab 1",
+    content: "Content for tab 1",
+  },
+  {
+    label: "Tab 2",
+    content: "Content for tab 2",
+  },
+  {
+    label: "Tab 3",
+    content: "Content for tab 3",
+  },
+  {
+    label: "Tab 4",
+    content: "Content for tab 4",
+  },
+];
 
-  return (
-    <div className="wrapper">
-      <div>
-        {tabsContent.map((tabItem, index) => (
-          <div
-            className={`tab-item ${currentTabIndex === index ? "active" : ""}`}
-            onClick={() => handleOnClick(index)}
-            key={tabItem.label}
-          >
-            <span className="label">{tabItem.label}</span>
-          </div>
-        ))}
-      </div>
-      <div className="content" style={{ color: "red" }}>
-        <h1>
-          {tabsContent[currentTabIndex] && tabsContent[currentTabIndex].content}
-        </h1>
-      </div>
-    </div>
-  );
+const CustomTabs = () => {
+  return <Tabs tabsContent={tabs} />;
 };
 
-export default Tabs;
+export default CustomTabs;
