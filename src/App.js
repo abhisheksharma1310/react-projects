@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordion from "./components/Accordian";
+import CustomModal from "./components/CustomModal";
 import CustomTabs from "./components/CustomTabs";
 import ImageSlider from "./components/ImageSlider";
 import LightDarkTheme from "./components/LightDarkMode";
@@ -26,7 +27,8 @@ function App() {
       <QrCodeGenerator />
       <LightDarkTheme />
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
-      <CustomTabs />
+      {/* <CustomTabs /> */}
+      <CustomModal />
     </div>
   );
 }
