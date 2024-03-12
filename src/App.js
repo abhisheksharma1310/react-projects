@@ -2,6 +2,7 @@ import "./App.css";
 import Accordion from "./components/Accordian";
 import CustomModal from "./components/CustomModal";
 import CustomTabs from "./components/CustomTabs";
+import GitHubProfileFinder from "./components/GitHubFinder";
 import ImageSlider from "./components/ImageSlider";
 import LightDarkTheme from "./components/LightDarkMode";
 import LoadMoreImage from "./components/LoadMoreImage";
@@ -28,7 +29,8 @@ function App() {
       <LightDarkTheme />
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <CustomTabs /> */}
-      <CustomModal />
+      {/* <CustomModal /> */}
+      <GitHubProfileFinder />
     </div>
   );
 }
