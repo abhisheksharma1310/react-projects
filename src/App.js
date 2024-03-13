@@ -9,6 +9,7 @@ import LoadMoreImage from "./components/LoadMoreImage";
 import QrCodeGenerator from "./components/QrCodeGenerator";
 import RandomColor from "./components/RandomColor";
 import ScrollIndicator from "./components/ScrollIndicator";
+import SearchAutoComplete from "./components/SearchAutoComplete";
 import StarRating from "./components/StarRating";
 import TreeView from "./components/TreeView";
 
@@ -30,7 +31,8 @@ function App() {
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <CustomTabs /> */}
       {/* <CustomModal /> */}
-      <GitHubProfileFinder />
+      {/* <GitHubProfileFinder /> */}
+      <SearchAutoComplete />
     </div>
   );
 }

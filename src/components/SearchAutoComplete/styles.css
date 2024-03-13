@@ -1,0 +1,12 @@
+
+.search-autocomplete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.filtered-list {
+    list-style-type: none;
+}
